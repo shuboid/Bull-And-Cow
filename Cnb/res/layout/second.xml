@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/violet" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="37dp"
+        android:text="@string/Entertheword"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/pl2disp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView5"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:textSize="20dp"
+        android:layout_toLeftOf="@+id/but"
+        android:scrollbars="vertical" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView4"
+        android:layout_marginBottom="15dp"
+        android:text="@string/Player2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="27dp"
+        android:text="@string/Score"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/pl2score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/ann"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/pl2inpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pl2score"
+        android:layout_alignTop="@+id/textView1"
+        android:ems="10"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/but"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="34dp"
+        android:background="@drawable/hit3" />
+        <SlidingDrawer
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_marginTop="200dp"
+        
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+ 
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="20dp"
+            android:layout_height="84dp"
+            android:text="||" />
+ 
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:orientation="vertical"
+            android:background="@drawable/blue">
+            
+              <Button
+                  android:id="@+id/a"
+                  android:layout_width="50dp"
+                  android:layout_height="wrap_content"
+                  
+                  android:onClick="crossing"
+                
+                  android:gravity="center_vertical"
+                  
+                  android:text="A" />
+
+   <Button
+            android:id="@+id/b"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+                              android:onClick="crossing"
+            
+             android:layout_below="@+id/a"
+            android:text="B" />
+   <Button
+            android:id="@+id/c"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+                              android:onClick="crossing"
+            
+             android:layout_below="@+id/b"
+            android:text="C" />
+    <Button
+            android:id="@+id/d"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+                              android:onClick="crossing"
+            
+             android:layout_below="@+id/c"
+            android:text="D" />
+
+     <Button
+         android:id="@+id/e"
+         android:layout_width="50dp"
+         android:layout_height="wrap_content"
+                           android:onClick="crossing"
+         
+         android:layout_below="@+id/d"
+       
+         android:text="E" />
+
+      <Button
+            android:id="@+id/f"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+                              android:onClick="crossing"
+            
+         android:layout_alignTop="@+id/a"
+        android:layout_toRightOf="@+id/a"
+                    android:text="F" />
+       <Button
+            android:id="@+id/g"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+             android:layout_alignTop="@+id/b"
+             android:onClick="crossing"
+             
+            android:layout_toRightOf="@+id/b"
+            android:text="G" />
+        <Button
+            android:id="@+id/h"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/c"
+                              android:onClick="crossing"
+            
+            android:layout_toRightOf="@+id/c"        
+            android:text="H" />
+        <Button
+            android:id="@+id/i"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/d"
+            android:layout_toRightOf="@+id/d"  
+                              android:onClick="crossing"
+                  
+            android:text="I" />
+        <Button
+            android:id="@+id/j"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/e"
+            android:layout_toRightOf="@+id/e"        
+            android:text="J"
+                              android:onClick="crossing"
+             />
+        <Button
+            android:id="@+id/k"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f"
+            android:layout_toRightOf="@+id/f"        
+            android:text="K"                   android:onClick="crossing"
+            />
+        
+        <Button
+            android:id="@+id/l"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/g"
+            android:layout_toRightOf="@+id/g" 
+                              android:onClick="crossing"
+                   
+            android:text="l" />
+        <Button
+            android:id="@+id/m"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/h"
+            android:layout_toRightOf="@+id/h" 
+                              android:onClick="crossing"
+              
+            android:text="M" />
+         <Button
+            android:id="@+id/n"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/i"
+            android:layout_toRightOf="@+id/i"        
+                              android:onClick="crossing"
+            android:text="N" />
+         <Button
+            android:id="@+id/o"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/j"
+            android:layout_toRightOf="@+id/j"        
+                             android:onClick="crossing"
+            android:text="O" />
+          <Button
+            android:id="@+id/p"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/k"
+            android:layout_toRightOf="@+id/k"        
+                             android:onClick="crossing"
+            android:text="P" />
+           <Button
+            android:id="@+id/q"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/l"
+            android:layout_toRightOf="@+id/l"        
+                             android:onClick="crossing"
+            android:text="Q" />
+            <Button
+            android:id="@+id/r"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/m"
+            android:layout_toRightOf="@+id/m"        
+                             android:onClick="crossing"
+            android:text="R" />
+             <Button
+            android:id="@+id/s"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/n"
+            android:layout_toRightOf="@+id/n"  
+                              android:onClick="crossing"
+                  
+            android:text="S" />
+              <Button
+            android:id="@+id/t"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/o"
+            android:layout_toRightOf="@+id/o"        
+                             android:onClick="crossing"
+            android:text="T" />
+         <Button
+            android:id="@+id/u"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/p"
+            android:layout_toRightOf="@+id/p"        
+                             android:onClick="crossing"
+            android:text="U" />
+          <Button
+            android:id="@+id/v"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/q"
+            android:layout_toRightOf="@+id/q"        
+                            android:onClick="crossing"
+            android:text="V" />
+           <Button
+            android:id="@+id/w"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/r"
+            android:layout_toRightOf="@+id/r"  
+                              android:onClick="crossing"
+                  
+            android:text="W" />
+            <Button
+            android:id="@+id/x"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/s"
+            android:layout_toRightOf="@+id/s"  
+                              android:onClick="crossing"
+                  
+            android:text="X" />
+             <Button
+            android:id="@+id/y"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/t"
+            android:layout_toRightOf="@+id/t" 
+            android:onClick="crossing"
+            android:text="Y" />
+             
+              <Button
+            android:id="@+id/z"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/u"
+            android:layout_toRightOf="@+id/u"   
+            android:onClick="crossing"
+            android:text="Z" />
+        
+         </RelativeLayout>
+    </SlidingDrawer>
+    
+
+</RelativeLayout>

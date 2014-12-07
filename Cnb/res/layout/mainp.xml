@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:background="@drawable/background3"
+    android:gravity="center"
+ 
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/singl"
+        android:layout_width="156dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="@dimen/nm"
+        android:background="@drawable/but16"
+        android:gravity="center_vertical"
+        android:paddingBottom="@android:dimen/app_icon_size" />
+
+    <Button
+        android:id="@+id/twpl"
+        android:layout_width="148dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="@dimen/snpd"
+        android:background="@drawable/but17"
+        android:padding="@dimen/snpd"
+        android:paddingTop="@dimen/snpd" />
+
+    <Button
+        android:id="@+id/high"
+        android:layout_width="141dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="@dimen/snpd"
+        android:background="@drawable/but19"
+        android:paddingTop="@dimen/snpd" />
+
+    <Button
+        android:id="@+id/rules"
+        android:layout_width="130dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="@dimen/snpd"
+        android:background="@drawable/but18" />
+
+</LinearLayout>
+
+
+
